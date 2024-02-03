@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Lottery</title>
+		<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<div class="l_box">
+    <h1>Student Lottery</h1>
+    <button onclick="getTeacher()">Get a Teacher</button>
+    <div id="result"></div>
+	</div>
+
+
+		<script>
+			 function getTeacher() {
+            const students = [
+                { name: 'Tanjina Taifa Purspita', roll: 9111 },
+                { name: 'Kazi Mohammed Ershad', roll: 9112 },
+                { name: 'Salma Akter', roll: 9113 },
+                { name: 'Md. Sajid Akram', roll: 9114 },
+                { name: 'Farhan Israk Abid', roll: 9115 },
+                { name: 'Arpa Boidya', roll: 9116 },
+                { name: 'Mst. Jannatul Naima', roll: 9117 },
+                { name: 'Soikat Acharjee', roll: 9118 },
+                { name: 'Zubair Ahmed Abid', roll: 9119 },
+                { name: 'Turjua Barua', roll: 9120 },
+                { name: 'Samira Arefin', roll: 9121 },
+                { name: 'Md. Raihanul Islam', roll: 9122 },
+                { name: 'Md. Mohaimenul Islam', roll: 9123 },
+                { name: 'Ramisa Binte Sultana', roll: 9124 },
+                { name: 'Iftekar Ahmed Ayman', roll: 9125 },
+                { name: 'Naznin Sultana', roll: 9126 },
+                { name: 'Shubeh Shadika Ikra', roll: 9127 },
+                { name: 'Tanvir Ahmed', roll: 9128 },
+                { name: 'Umma Alma', roll: 9129 },
+                { name: 'Dipta Bhattacharjee', roll: 9130 },
+                { name: 'Abriti Chowdhury', roll: 9131 },
+                { name: 'Ummey Honey Tanzila', roll: 9132 },
+                { name: 'Md. Abdur Rahim', roll: 9133 },
+                { name: 'Nusrat Jahan Sraboni', roll: 9134 },
+                { name: 'Joy Gopal Dey Prodipta', roll: 9135 },
+                { name: 'Joy Ram Dey Sudipta', roll: 9136 },
+                { name: 'Tahera Shamila Taky', roll: 9137 },
+                { name: 'Rakibul Hossain Bhuiya', roll: 9138 },
+                { name: 'Liza Akter', roll: 9139 },
+                { name: 'Tasif Hossin Opu', roll: 9140 },
+                { name: 'Tafiqul Bari Sadid', roll: 9141 },
+                { name: 'Mohammed Ashraful Islam', roll: 9142 },
+                { name: 'Ahammed Ullah', roll: 9143 },
+                { name: 'Suraia Afroz', roll: 9144 },
+                { name: 'Umme Asma', roll: 9145 },
+                { name: 'Md. Saydur Rahman', roll: 9146 },
+                { name: 'Md. Ariful Islam ', roll: 9147 },
+                { name: 'Md. Abu Faisal Azad', roll: 9148 },
+                { name: 'Afsana Hoque ', roll: 9149 },
+                { name: 'Samanta Patoary', roll: 9150 },
+                { name: 'Abrar Hamim', roll: 9151 },
+                { name: 'Tehami Khan', roll: 9152 },
+                { name: 'Md. Ahsanuzzaman Nayon', roll: 9153 },
+                { name: 'Jannatul Fardouse Oishi', roll: 9154 },
+                { name: 'Mohammad Mehedi Hasan', roll: 9155 },
+                { name: 'Sidratul Muntaha', roll: 9156 },
+                { name: 'Mohammad Sayed Uzzaman', roll: 9157 },
+                { name: 'Md. Saidul Haque', roll: 9158 },
+                { name: 'Shahedul Anwar', roll: 9159 },
+                { name: 'Nawer Alam Siddique', roll: 9160 },
+                { name: 'Ahmed Al Seyam', roll: 9161 },
+                { name: 'Ashraful Jilan Rabbi', roll: 9162 },
+                { name: 'Pratoy Majumdar', roll: 9163 },
+                { name: 'Tafsir Ebne Sayed', roll: 9164 },
+                { name: 'Md. Foysal', roll: 9165 },
+                { name: 'Omar Faruk Tanim', roll: 9166 },
+                { name: 'Sheikh Rifat Arian', roll: 9167 },
+                { name: 'Sanjida Sultana Any', roll: 9168 },
+                { name: 'Walid Mahmud', roll: 9169 },
+                { name: 'Afifa Islam', roll: 9170 }
+            ];
+
+            // Generate a random index to pick a student
+            const randomIndex = Math.floor(Math.random() * students.length);
+
+            // Get the randomly selected student
+            const selectedStudent = students[randomIndex];
+
+            // Display the result
+            const resultElement = document.getElementById('result');
+            resultElement.textContent = `Selected Teacher: ${selectedStudent.name} (Roll: ${selectedStudent.roll})`;
+        }
+		</script>
+
+
+</body>
+</html>
